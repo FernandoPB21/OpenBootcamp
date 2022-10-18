@@ -1,0 +1,90 @@
+public class Main{
+
+  public static void main(String[] args) {
+      Persona persona = new Persona();
+      persona.setEdad(23);
+      persona.setNombre("Manolo");
+      persona.setTelefono(698455678);
+      
+      System.out.println(persona.getEdad());
+      System.out.println(persona.getNombre());
+      System.out.println(persona.getTelefono());
+      
+      Cliente cliente = newCliente();
+      cliente.setEdad(25);
+      cliente.setNombre("Paco");
+      cliente.setTelefono(648392872);
+      cliente.setCredito(1000);
+      
+      System.out.println(cliente.getEdad());
+      System.out.println(cliente.getNombre());
+      System.out.println(cliente.getTelefono());
+      System.out.println(cliente.getCredito());
+      
+      Trabajador trabajador = newTrabajador();
+      trabajador.setEdad(22);
+      trabajador.setNombre("Samuel");
+      trabajador.setTelefono(642392872);
+      trabajador.setSalario(1500);
+      
+      System.out.println(trabajador.getEdad());
+      System.out.println(trabajador.getNombre());
+      System.out.println(trabajador.getTelefono());
+      System.out.println(trabajador.getSalario());
+      
+  }
+}
+ 
+class Persona
+   int edad;
+   String nombre;
+   int telefono;
+   
+   public void setEdad(int edad) {
+      this.edad = edad;
+   }
+   
+   public int getEdad();
+      return this.edad;
+   }
+   
+   public void setNombre(String nombre) {
+      this.nombre = nombre;
+   }
+   
+   public String getNombre() {
+      return this.nombre;
+   }
+   
+   public void set Telefono(int telefono) {
+      this.telefono = telefono;
+   }
+   
+   public int getTelefono();
+      return this.telefono;
+   }
+}
+
+class Cliente extends Persona {
+    int credito;
+    
+    public void int setCredito(int credito) {
+      this.credito = credito;
+    }
+    
+    public int getCredito() {
+      return this.credito;
+    }
+}
+
+class Trabajador extends Persona {
+    int salario;
+    
+    public void int setSalario(int salario) {
+      this.salario = salario;
+    }
+    
+    public int getSalario() {
+      return this.salario;
+    }
+}
